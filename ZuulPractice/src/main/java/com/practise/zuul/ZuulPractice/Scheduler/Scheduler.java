@@ -11,7 +11,7 @@ public class Scheduler {
 	@Scheduled(fixedRate = 1000)
 	public void Index() {
 		
-	System.out.println("Scheduler is running");
+	System.out.println("Scheduler is running at every 1 second");
 	
 	}
 }
