@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Index Page</title>
+<title>Insert title here</title>
 </head>
 <body>
- <h1>Welcome to new Page</h1>
- 
- <button>Submit</button>
+<h1>Hello how are you ${email} </h1>
 </body>
 </html>

@@ -9,15 +9,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+//import de.codecentric.boot.admin.server.config.EnableAdminServer;
+
 
 /*@EnableZuulProxy  
 @EnableDiscoveryClient  */
 
 @SpringBootApplication
 @EnableScheduling
+//@EnableAdminServer
 @ComponentScan("com.practise.zuul.ZuulPractice.*")
 public class ZuulPracticeApplication implements CommandLineRunner{
-
 
 	public static void main(String[] args) {
 		//SpringApplication.run(ZuulPracticeApplication.class, args);
