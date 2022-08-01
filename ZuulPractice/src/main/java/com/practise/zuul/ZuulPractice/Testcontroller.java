@@ -36,10 +36,10 @@ public class Testcontroller {
 		return "home";
 	}
 	
-//	@RequestMapping("/error")
-//	public String error() {
-//		
-//		return "error";
-//	}
+	@RequestMapping("/error")
+	public String error() {
+		
+		return "error";
+	}
 
 }

@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
+
 //import de.codecentric.boot.admin.server.config.EnableAdminServer;
 
 
@@ -17,14 +19,14 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-//@EnableAdminServer
+@EnableAdminServer
 @ComponentScan("com.practise.zuul.ZuulPractice.*")
 public class ZuulPracticeApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {
 		//SpringApplication.run(ZuulPracticeApplication.class, args);
 		SpringApplication app=new SpringApplication(ZuulPracticeApplication.class);
-		app.setDefaultProperties(Collections.singletonMap("server.port", "9095"));//Second way to configure port or property
+		app.setDefaultProperties(Collections.singletonMap("server.port", "8085"));//Second way to configure port or property
 		app.run(args);
 		
 		System.out.println("Hello World");
